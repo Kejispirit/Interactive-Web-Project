@@ -1,4 +1,3 @@
-// JavaScript for Random Funny Quote API Integration
 function fetchFunnyQuote() {
     const quoteDiv = document.getElementById('quote');
 
@@ -17,10 +16,10 @@ function fetchFunnyQuote() {
         });
 }
 
-// Add an event listener to load the quote on page load
+
 window.addEventListener('load', fetchFunnyQuote);
 
-// Function to embed local Rick Roll video in the page
+
 function rickRoll() {
     const contentDiv = document.getElementById('dynamicContent');
     contentDiv.innerHTML = `
@@ -31,7 +30,7 @@ function rickRoll() {
     startTrollRain();
 }
 
-// Function to start troll face rain effect
+
 function startTrollRain() {
     const body = document.body;
     for (let i = 0; i < 50; i++) {
@@ -55,6 +54,5 @@ function startTrollRain() {
     }
 }
 
-// Add event listener to the button
 const dynamicBtn = document.getElementById('dynamicBtn');
 dynamicBtn.addEventListener('click', rickRoll);
